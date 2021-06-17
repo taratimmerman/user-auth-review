@@ -7,17 +7,32 @@
   padding: 0;
 }
 
-.App {
-  text-align: center;
+body {
+  color: #282c34;
+  background-color: linen;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin: 15px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 10px;
+  height: 30vh;
+}
+
+.switch {
+  margin: 15px;
+}
+
+h1 {
+  color: #3f51b5;
 }
