@@ -1,10 +1,10 @@
 import { React, useState, useEffect } from 'react';
 import { TextField, Button } from '@material-ui/core';
 import { useHistory } from 'react-router-dom';
-import axios from 'axios';
 import { Link } from 'react-router-dom';
 import * as Yup from 'yup';
 import { formSchema } from '../validation/formSchema';
+import axiosWithAuth from '../components/axiosWithAuth';
 
 const initialFormValues = {
     username: '',
@@ -39,8 +39,8 @@ const Login = () => {
 
     const login = (event) => {
         event.preventDefault();
-
-        axios.post('http://localhost:8080/api/auth/login', formValues)
+        axiosWithAuth()
+            .post('/api/auth/login', formValues)
             .then((res) => {
                 window.localStorage.setItem('token', res.data.token);
                 setFormValues(initialFormValues);
