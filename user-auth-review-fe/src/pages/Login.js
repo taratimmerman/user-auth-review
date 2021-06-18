@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 import { React, useState, useEffect } from 'react';
 import { TextField, Button } from '@material-ui/core';
 import { useHistory } from 'react-router-dom';
@@ -48,7 +47,7 @@ const Login = () => {
                 history.push('/dashboard');
             })
             .catch((err) => {
-                alert(err);
+                alert(err.message);
             });
     };
 

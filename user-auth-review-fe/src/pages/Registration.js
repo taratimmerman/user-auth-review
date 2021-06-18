@@ -46,7 +46,7 @@ const Registration = () => {
 
         axios.post('http://localhost:8080/api/auth/register', newUser)
             .then((res) => {
-                console.log(JSON.parse(res.data));
+                console.log(res.data);
                 setFormValues(initialFormValues);
                 history.push('/');
             })
