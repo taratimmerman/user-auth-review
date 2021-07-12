@@ -22,10 +22,6 @@ Full stack React/Node project created to practice and review user registration, 
         <code><img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" /></code> 
     </a>
 
-<a href="https://redux.js.org/" target="_blank" rel="noopener noreferrer"> 
-        <code><img src="https://img.shields.io/badge/Redux-593D88?style=for-the-badge&logo=redux&logoColor=white" /></code> 
-    </a>
-
 <a href="https://material-ui.com/" target="_blank" rel="noopener noreferrer"> 
         <code><img src="https://img.shields.io/badge/Material--UI-0081CB?style=for-the-badge&logo=material-ui&logoColor=white" /> </code> 
     </a>
